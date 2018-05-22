@@ -10,10 +10,10 @@ pkg_svc_user="root"
 pkg_binds=(
   [database]="port"
 )
-# pkg_exports=(
-#   [port]=tomcat_port
-# )
-# pkg_exposes=(port)
+pkg_exports=(
+  [port]=server.port
+)
+pkg_exposes=(port)
 
 do_prepare()
 {
